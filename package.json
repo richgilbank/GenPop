@@ -1,0 +1,14 @@
+{
+  "name": "GenPop",
+  "version": "0.0.0",
+  "description": "Generative art",
+  "author": "Rich Gilbank",
+  "devDependencies": {
+    "gulp": "~3.6.1",
+    "gulp-stylus": "~0.2.1",
+    "gulp-concat": "~2.2.0",
+    "gulp-uglify": "~0.2.1",
+    "gulp-coffee": "~1.4.2",
+    "gulp-watch": "~0.6.2"
+  }
+}
