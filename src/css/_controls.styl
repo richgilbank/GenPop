@@ -1,0 +1,46 @@
+.controls
+  position absolute
+  z-index 10
+  background #fff
+  transform translateY(100%)
+  transition all 0.5s ease
+  bottom 0
+  height 200px
+  width 100%
+  border-radius 10px 10px 0 0
+  padding 30px
+
+  &.active
+    transform translateY(0)
+
+.control-handle
+  background #fff
+  position absolute
+  width 50px
+  height 30px
+  right 10px
+  margin-top -60px
+  border-radius 10px 10px 0 0
+  cursor pointer
+
+  &:after
+    content ''
+    display block
+    position absolute
+    width 10px
+    height 10px
+    left 50%
+    top 50%
+    margin-left -5px
+    margin-top -2px
+    background #fff
+    border 1px solid #000
+    border-bottom none
+    border-right none
+    transform rotate(45deg)
+    transition all 0.7s ease
+
+    .controls.active &
+      transform rotate(225deg)
+      margin-top -5px
+

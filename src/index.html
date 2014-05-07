@@ -3,10 +3,23 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <title></title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 
+<div class="controls active">
+  <div class="control-handle"></div>
+
+  <label for="backgroundColor">Background Colour</label>
+  <input type="color" name="backgroundColor" id="backgroundColor">
+
+  <button id="redraw">Draw!</button>
+</div>
+
+<div id="canvas"></div>
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/vendor.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
