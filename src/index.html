@@ -7,13 +7,29 @@
 </head>
 <body>
 
-<div class="controls active">
+<div class="controls">
   <div class="control-handle"></div>
 
   <label for="backgroundColor">Background Colour</label>
   <input type="color" name="backgroundColor" id="backgroundColor">
 
+  <label for="pointColor">Point Colour</label>
+  <input type="color" name="pointerColor" id="pointColor" value="#ffffff">
+
+  <label for="color1">Colour 1</label>
+  <input type="color" name="color1" id="color1" value="#1e84a6">
+
+  <label for="color2">Colour 2</label>
+  <input type="color" name="color2" id="color2" value="#d78d18">
+
+  <label for="numTriangles">Number of triangles (upper bound)</label>
+  <input type="number" name="numTriangles" id="numTriangles" value="800">
+
+  <label for="sizeTriangles">Size of triangles (upper bound)</label>
+  <input type="number" name="sizeTriangles" id="sizeTriangles" value="100">
+
   <button id="redraw">Draw!</button>
+  <button id="save">Save!</button>
 </div>
 
 <div id="canvas"></div>
