@@ -7,29 +7,48 @@
 </head>
 <body>
 
-<div class="controls">
+<div class="controls active">
   <div class="control-handle"></div>
 
-  <label for="backgroundColor">Background Colour</label>
-  <input type="color" name="backgroundColor" id="backgroundColor">
+  <fieldset class="leftcol">
+    <div class="field">
+      <label for="backgroundColor">Background Colour</label>
+      <input type="color" name="backgroundColor" id="backgroundColor">
+    </div>
 
-  <label for="pointColor">Point Colour</label>
-  <input type="color" name="pointerColor" id="pointColor" value="#ffffff">
+    <div class="field">
+      <label for="pointColor">Point Colour</label>
+      <input type="color" name="pointerColor" id="pointColor" value="#ffffff">
+    </div>
 
-  <label for="color1">Colour 1</label>
-  <input type="color" name="color1" id="color1" value="#1e84a6">
+    <div class="field">
+      <label for="color1">Colour 1</label>
+      <input type="color" name="color1" id="color1" value="#1e84a6">
+    </div>
 
-  <label for="color2">Colour 2</label>
-  <input type="color" name="color2" id="color2" value="#d78d18">
+    <div class="field">
+      <label for="color2">Colour 2</label>
+      <input type="color" name="color2" id="color2" value="#d78d18">
+    </div>
+  </fieldset>
 
-  <label for="numTriangles">Number of triangles (upper bound)</label>
-  <input type="number" name="numTriangles" id="numTriangles" value="800">
+  <fieldset class="rightcol">
+    <div class="field">
+      <label for="numTriangles">Max triangles</label>
+      <input type="number" name="numTriangles" id="numTriangles" value="800">
+    </div>
 
-  <label for="sizeTriangles">Size of triangles (upper bound)</label>
-  <input type="number" name="sizeTriangles" id="sizeTriangles" value="100">
+    <div class="field">
+      <label for="sizeTriangles">Max triangle size</label>
+      <input type="number" name="sizeTriangles" id="sizeTriangles" value="100">
+    </div>
+  </fieldset>
 
-  <button id="redraw">Draw!</button>
-  <button id="save">Save!</button>
+  <div class="actions">
+    <button id="redraw">Draw!</button>
+    <button id="save">Save!</button>
+  </div>
+
 </div>
 
 <div id="canvas"></div>
