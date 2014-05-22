@@ -5,6 +5,8 @@
 
 Genpop makes things. Pretty things. Like this:
 
+![](https://raw.githubusercontent.com/richgilbank/GenPop/master/sample.jpg)
+
 GenPop uses [RaphaelJS](http://raphaeljs.com/) to draw its shapes in SVG so that it can be downloaded easily, scaled to ∞-1, edited in Illustrator and printed.
 
 ### To run dem tings
